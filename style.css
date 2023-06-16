@@ -162,7 +162,7 @@ header {
   cursor: pointer;
   font-weight: var(--fw-700-bold);
   font-family: var(--ff-raleway);
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 #section-1 .submit-container-1 button:hover,
@@ -250,7 +250,7 @@ header {
   text-decoration: none;
   border-bottom: 1px solid;
   padding-bottom: 0.4rem;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 #section-2 #content-2 .anchor p a::after {
@@ -392,7 +392,7 @@ footer .flex-group ul li a {
   color: var(--white);
   text-decoration: none;
   line-height: 2;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 footer .flex-group ul li a:hover {
@@ -428,12 +428,12 @@ footer .flex-group .ftr-nav-bar-4 .fa-brands {
   padding: 0.5rem;
   text-align: center;
   width: 2rem;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 footer .flex-group .ftr-nav-bar-4 .fa-facebook-f:hover {
-  border: 1px solid #4267B2;
-  color: #4267B2;
+  border: 1px solid #4267b2;
+  color: #4267b2;
 }
 
 footer .flex-group .ftr-nav-bar-4 .fa-twitter:hover {
@@ -442,7 +442,18 @@ footer .flex-group .ftr-nav-bar-4 .fa-twitter:hover {
 }
 
 footer .flex-group .ftr-nav-bar-4 .fa-instagram:hover {
-  background: linear-gradient(var(--very-dark-blue), var(--very-dark-blue)) padding-box, linear-gradient(to right, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d)border-box;
+  background: linear-gradient(var(--very-dark-blue), var(--very-dark-blue))
+      padding-box,
+    linear-gradient(
+        to right,
+        #405de6,
+        #5851db,
+        #833ab4,
+        #c13584,
+        #e1306c,
+        #fd1d1d
+      )
+      border-box;
   border: 1px solid transparent;
   color: #833ab4;
 }
@@ -453,15 +464,15 @@ footer .attribution {
 }
 footer .attribution a {
   color: var(--light-grayish-blue);
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 footer .attribution a:hover {
   text-decoration: none;
-  color: #F8C8DC;
+  color: #f8c8dc;
 }
 
-@media (min-width: 845px) {
+@media (min-width: 710px) {
   header {
     width: 100%;
     padding: 3rem;
@@ -544,7 +555,6 @@ footer .attribution a:hover {
     text-align: left;
   }
 
-
   #section-2 .flex-group #content-2 {
     margin: 0;
   }
@@ -554,7 +564,7 @@ footer .attribution a:hover {
   }
 
   #section-2 .flex-group #content-2 .anchor {
-    display: flex; 
+    display: flex;
     margin: 1rem 0;
   }
 
@@ -602,5 +612,9 @@ footer .attribution a:hover {
 
   footer .grid-flow svg {
     grid-column: span 5;
+  }
+
+  footer .grid-flow .ftr-nav-bar-4 {
+    align-items: flex-start;
   }
 }
